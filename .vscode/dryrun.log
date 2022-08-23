@@ -1,0 +1,13 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/jinholee/ft_printf'
+cc -Wall -Wextra -Werror -c -o ft_printf.o -I ft_printf.h ft_printf.c
+ 
+cc -Wall -Wextra -Werror -c -o utils.o -I ft_printf.h utils.c
+cc -Wall -Wextra -Werror -c -o utils2.o -I ft_printf.h utils2.c
+cc -Wall -Wextra -Werror -c -o utils3.o -I ft_printf.h utils3.c
+cc -Wall -Wextra -Werror -c -o utils4.o -I ft_printf.h utils4.c
+ 
+cc -Wall -Wextra -Werror -c -o utils5.o -I ft_printf.h utils5.c
+ar rcs libftprintf.a ft_printf.o utils.o utils2.o utils3.o utils4.o utils5.o
+make: Leaving directory `/Users/jinholee/ft_printf'
+ 
